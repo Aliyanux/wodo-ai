@@ -1,0 +1,21 @@
+{
+  "short_name": "Wodo AI",
+  "name": "Wodo AI",
+  "description": "Wodo AI connects you with like-minded people through the power of your story. Now an installable Progressive Web App (PWA), you can add it to your home screen for an app-like experience.",
+  "icons": [
+    {
+      "src": "https://storage.googleapis.com/genai-assets/wodo-icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://storage.googleapis.com/genai-assets/wodo-icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#9333ea",
+  "background_color": "#f3f4f6"
+}

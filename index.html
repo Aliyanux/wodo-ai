@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wodo AI - Connect Through Stories</title>
+    
+    <!-- SEO and Sharing Meta Tags -->
+    <meta name="description" content="Wodo AI connects you with like-minded people through the power of your story. Share experiences, find AI companions, and connect with a community through shared thoughts." />
+    <meta name="theme-color" content="#9333ea" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <!-- TODO: Replace with your actual deployed URL -->
+    <meta property="og:url" content="https://wodo.ai/"> 
+    <meta property="og:title" content="Wodo AI - Connect Through Stories">
+    <meta property="og:description" content="Wodo AI connects you with like-minded people through the power of your story. Share experiences, find AI companions, and connect with a community through shared thoughts.">
+    <meta property="og:image" content="https://storage.googleapis.com/genai-assets/wodo-icon-512.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <!-- TODO: Replace with your actual deployed URL -->
+    <meta property="twitter:url" content="https://wodo.ai/">
+    <meta property="twitter:title" content="Wodo AI - Connect Through Stories">
+    <meta property="twitter:description" content="Wodo AI connects you with like-minded people through the power of your story. Share experiences, find AI companions, and connect with a community through shared thoughts.">
+    <meta property="twitter:image" content="https://storage.googleapis.com/genai-assets/wodo-icon-512.png">
+    
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out',
+              'slide-in-up': 'slideInUp 0.5s ease-out',
+              'typing-bubble': 'typing-bubble 1s infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideInUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              'typing-bubble': {
+                '0%, 100%': { transform: 'scale(1)' },
+                '50%': { transform: 'scale(1.2)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.7.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.525.0",
+    "lucide": "https://esm.sh/lucide@^0.525.0",
+    "marked": "https://esm.sh/marked@^13.0.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gradient-to-br from-purple-50 via-gray-50 to-pink-50 dark:from-gray-900 dark:via-purple-950 dark:to-black">
+    <div id="root" class="h-screen"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
